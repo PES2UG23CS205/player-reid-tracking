@@ -1,0 +1,12 @@
+ultralytics
+opencv-python
+numpy
+torch
+torchvision
+Pillow
+PyYAML
+scipy
+matplotlib
+seaborn
+pandas
+tqdm

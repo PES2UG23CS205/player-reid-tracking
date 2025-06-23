@@ -1,0 +1,38 @@
+tracker_type: botsort
+
+# Tracking thresholds
+track_high_thresh: 0.5
+track_low_thresh: 0.3
+new_track_thresh: 0.7
+match_thresh: 0.8
+appearance_thresh: 0.25
+fuse_score: False            # Whether to fuse detection score with appearance metric
+
+# Buffer and timing
+track_buffer: 30
+unsuccessful_track_thr: 2
+frame_rate: 30
+
+# Geometry & motion filtering
+aspect_ratio_thresh: 1.6
+min_box_area: 10
+gmc: False
+gmc_method: sparseOptFlow
+ema_alpha: 0.9
+mot20: False
+proximity_thresh: 0.5
+
+# Appearance embedding (ReID)
+with_reid: True
+model: auto    # or path to detector model if needed
+
+reid:
+  model: "trackers/osnet_x0_25_msmt17.pt"  # Path to ReID model weights
+  device: "cpu"                            # or "cuda"
+
+# Other possible advanced BoT-SORT options (defaults)
+momentum: 0.8           # for EMA update of embeddings
+max_cosine_distance: 0.2
+max_age: 30
+n_init: 3
+nn_budget: 100
