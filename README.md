@@ -125,4 +125,4 @@ numpy
 This project is licensed under the MIT License.
 📬 Contact
 
-For questions or suggestions, please open an issue or contact [gowthammourya9@gmail.com]
+For questions or suggestions, please open an issue or contact [gowthammourya9@gmail.c
