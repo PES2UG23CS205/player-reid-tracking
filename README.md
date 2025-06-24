@@ -12,26 +12,6 @@ This project implements real-time player tracking and re-identification in video
 
     Output: Generates an annotated video with bounding boxes and consistent player IDs.
 
-📁 Project Structure
-
-text
-player-reid-project/
-│
-├── models/
-│   └── best.pt                  # Custom YOLO detection model
-│
-├── trackers/
-│   └── botsort_reid.yaml        # Tracker config file with ReID enabled
-│
-├── data/
-│   └── input/
-│       └── sample_video.mp4     # Input video for testing
-│
-├── runs/                        # Output folder for tracking videos
-│
-├── main.py                      # Main script to run tracking
-├── requirements.txt             # Python dependencies
-└── README.md                    # Project documentation
 
 🛠️ Requirements
 
@@ -42,7 +22,23 @@ player-reid-project/
     Ultralytics YOLOv8 (pip install ultralytics)
 
     Other dependencies listed in requirements.txt
-
+player-reid-project/
+│
+├── models/
+│ └── best.pt                # Custom YOLO detection model
+│
+├── trackers/
+│ └── botsort_reid.yaml      # Tracker config file with ReID enabled
+│
+├── data/
+│ └── input/
+│ └── sample_video.mp4       # Input video for testing
+│
+├── runs/                    # Output folder for tracking videos
+│
+├── main.py                  # Main script to run tracking
+├── requirements.txt         # Python dependencies
+└── README.md                # Project documentation
 ⚙️ Setup
 
     Clone the repository:
